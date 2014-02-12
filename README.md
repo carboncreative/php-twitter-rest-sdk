@@ -1,4 +1,4 @@
-An imcomplete client for the Twitter API. Implemented so far:
+An incomplete client for the Twitter API. Implemented so far:
 
 - `GET statuses/mentions_timeline` - `TwitterClient::getMentions`
 - `GET statuses/user_timeline` - `TwitterClient::getUserTweets`
