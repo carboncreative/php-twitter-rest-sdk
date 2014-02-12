@@ -1,0 +1,20 @@
+{
+    "name": "tmoitie/php-twitter-rest-sdk",
+    "description": "PHP PSR4 API for Twitter's Restful interface, using Guzzle",
+    "license": "MIT",
+    "version": "0.0.0",
+    "authors": [
+        {
+            "name": "Tom Moitié",
+            "email": "tom@tmoitie.co.uk"
+        }
+    ],
+    "require": {
+        "guzzle/guzzle": "~3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tmoitie\\Twitter\\": "src"
+        }
+    }
+}

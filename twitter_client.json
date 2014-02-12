@@ -1,0 +1,132 @@
+{
+    "name": "Twitter",
+    "apiVersion": "1.1",
+    "baseUrl": "https://api.twitter.com/{version}/",
+    "description": "Twitter API",
+    "operations": {
+        ".statuses": {
+            "parameters": {
+                "since_id": {
+                    "location": "query",
+                    "type": "integer"
+                },
+                "max_id": {
+                    "location": "query",
+                    "type": "integer"
+                },
+                "trim_user": {
+                    "location": "query",
+                    "type": "boolean"
+                },
+                "count": {
+                    "location": "query",
+                    "type": "integer",
+                    "maximum": 200
+                },
+                "contributor_details": {
+                    "location": "query",
+                    "type": "boolean"
+                }
+            }
+        },
+        "getUserTweets": {
+            "httpMethod": "GET",
+            "uri": "statuses/user_timeline.json",
+            "extend": ".statuses",
+            "parameters": {
+                "user_id": {
+                    "location": "query",
+                    "type": "integer"
+                },
+                "screen_name": {
+                    "location": "query",
+                    "type": "string"
+                },
+                "exclude_replies": {
+                    "location": "query",
+                    "type": "boolean"
+                },
+                "include_rts": {
+                    "location": "query",
+                    "type": "boolean"
+                }
+            }
+        },
+        "getMentions": {
+            "httpMethod": "GET",
+            "uri": "statuses/mentions_timeline.json",
+            "extend": ".statuses",
+            "parameters": {
+                "include_entities": {
+                    "location": "query",
+                    "type": "boolean"
+                }
+            }
+        },
+        "getHomeTimeline": {
+            "httpMethod": "GET",
+            "uri": "statuses/home_timeline.json",
+            "extend": ".statuses",
+            "parameters": {
+                "include_entities": {
+                    "location": "query",
+                    "type": "boolean"
+                },
+                "exclude_replies": {
+                    "location": "query",
+                    "type": "boolean"
+                }
+            }
+        },
+        "getMyRetweets": {
+            "httpMethod": "GET",
+            "uri": "statuses/retweets_of_me.json",
+            "extend": ".statuses",
+            "parameters": {
+                "include_entities": {
+                    "location": "query",
+                    "type": "boolean"
+                },
+                "exclude_replies": {
+                    "location": "query",
+                    "type": "boolean"
+                }
+            }
+        },
+        "getUserFavourites": {
+            "httpMethod": "GET",
+            "uri": "statuses/favorites/list.json",
+            "parameters": {
+                "user_id": {
+                    "location": "query",
+                    "type": "integer"
+                },
+                "screen_name": {
+                    "location": "query",
+                    "type": "string"
+                },
+                "since_id": {
+                    "location": "query",
+                    "type": "integer"
+                },
+                "max_id": {
+                    "location": "query",
+                    "type": "integer"
+                },
+                "count": {
+                    "location": "query",
+                    "type": "integer",
+                    "maximum": 200
+                },
+                "include_entities": {
+                    "location": "query",
+                    "type": "boolean"
+                },
+                "exclude_replies": {
+                    "location": "query",
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}
