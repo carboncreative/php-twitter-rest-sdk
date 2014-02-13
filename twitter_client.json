@@ -95,7 +95,7 @@
         },
         "getUserFavourites": {
             "httpMethod": "GET",
-            "uri": "statuses/favorites/list.json",
+            "uri": "favorites/list.json",
             "parameters": {
                 "user_id": {
                     "location": "query",
