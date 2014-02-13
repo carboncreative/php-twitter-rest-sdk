@@ -16,5 +16,6 @@
         "psr-4": {
             "Tmoitie\\Twitter\\": "src"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
