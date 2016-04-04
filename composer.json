@@ -2,7 +2,7 @@
     "name": "carboncreative/php-twitter-rest-sdk",
     "description": "PHP PSR4 API for Twitter's Restful interface, using Guzzle",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
         {
             "name": "Tom Moitié",
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "guzzle/guzzle": "~3.7"
+        "guzzlehttp/guzzle": "~5"
     },
     "autoload": {
         "psr-4": {
